@@ -9,10 +9,10 @@ class Solution {
 
         while(start<=end){
 
-            if(people[start]+people[end]<=limit){
-                start++;
+            if(people[start]+people[end]>limit){
                 end--;
             }else{
+                start++;
                 end--;
             }
 
